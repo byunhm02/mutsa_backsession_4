@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  jackson:
+    parser:
+      allow-numeric-leading-zeros: true
+    time-zone: Asia/Seoul
+
+  jpa:
+    show-sql: true
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          batch_size: 100
+
+  datasource:
+    url: url
+    username: 유저네임
+    password: 비밀번호
+    driver-class-name: com.mysql.cj.jdbc.Driver
